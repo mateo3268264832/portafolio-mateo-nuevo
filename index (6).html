@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Mateo Saez Beleño</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#info-basica">Información básica</a></li>
+      <li><a href="#formacion-academica">Formación académica</a></li>
+      <li><a href="#contactenos">Contáctenos</a></li>
+      <li><a href="#redes-sociales">Redes sociales</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="inicio">
+    <img src="img/foto-perfil.jpg" alt="Fotografía de Mateo Saez Beleño">
+    <h1>Mateo Saez Beleño</h1>
+    <h2>Estudiante de Ingeniería de Sistemas</h2>
+    <p class="slogan">"Mi historia, mis metas y lo que me hace ser yo."</p>
+  </header>
+
+  <!-- INFORMACIÓN BÁSICA -->
+  <section id="info-basica">
+    <h2>Información básica</h2>
+    <ul class="info-list">
+      <li><strong>Nombre completo:</strong> Mateo Saez Beleño</li>
+      <li><strong>Fecha y lugar de nacimiento:</strong> 3 de noviembre de 2005, Sahagún - Córdoba</li>
+      <li><strong>Dirección de residencia:</strong> Carrera 15 # 3CS - 74</li>
+      <li><strong>Teléfono de contacto:</strong> 3205579197</li>
+      <li><strong>Correo electrónico:</strong> msaezbeleno@gmail.com</li>
+    </ul>
+    <h3>Sobre mí</h3>
+    <p>
+      Soy una persona responsable, perseverante y comprometida con mi crecimiento personal y académico.
+      Actualmente me encuentro en formación como profesional en Ingeniería de Sistemas, área que me permite
+      desarrollar mis habilidades en tecnología, programación y resolución de problemas. Me considero una
+      persona tranquila, amable y respetuosa, a quien le gusta compartir con las personas cercanas, aprender
+      de nuevas experiencias y disfrutar de los momentos sencillos. Me caracterizo por tener disposición para
+      aprender, mejorar constantemente y asumir nuevos retos que contribuyan tanto a mi desarrollo profesional
+      como personal.
+    </p>
+  </section>
+
+  <!-- FORMACIÓN ACADÉMICA -->
+  <section id="formacion-academica">
+    <h2>Formación académica</h2>
+
+    <h3>Estudios realizados</h3>
+    <ul class="info-list">
+      <li>Bachiller técnico con especialización en Comercio — Institución Educativa El Nacional, Sahagún - Córdoba (Diciembre 1 de 2022)</li>
+      <li>Técnico en Contabilización de Operaciones Comerciales y Financieras — SENA (Noviembre 10 de 2022)</li>
+    </ul>
+
+    <h3>Formación en curso</h3>
+    <p>Actualmente cursando VI semestre de la carrera de pregrado de Ingeniería de Sistemas en la Universidad de Córdoba.</p>
+
+    <h3>Competencias y habilidades</h3>
+    <ul class="info-list">
+      <li>Programación en Java y Programación Orientada a Objetos (POO)</li>
+      <li>HTML y CSS</li>
+      <li>Bases de datos y SQL (MySQL), diseño de bases de datos relacionales</li>
+      <li>Estructuras de datos</li>
+      <li>Desarrollo de aplicaciones en NetBeans / Java Swing</li>
+      <li>Manejo de XAMPP</li>
+      <li>Fundamentos de ingeniería de software</li>
+      <li>Análisis y resolución de problemas</li>
+      <li>Manejo básico de Git/GitHub</li>
+      <li>Linux</li>
+      <li>Trabajo en equipo</li>
+    </ul>
+
+    <h3>Idiomas</h3>
+    <ul class="info-list">
+      <li>Inglés — Nivel intermedio</li>
+    </ul>
+  </section>
+
+  <!-- FORMULARIO DE CONTÁCTENOS -->
+  <section id="contactenos">
+    <h2>Contáctenos</h2>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Número de teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="3001234567">
+      </div>
+
+      <div class="form-group">
+        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+      </div>
+
+      <div class="form-group">
+        <label for="horario">Horario disponible para contacto</label>
+        <input type="time" id="horario" name="horario">
+      </div>
+
+      <div class="form-group">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="0" max="120">
+      </div>
+
+      <div class="form-group">
+        <label>Género</label>
+        <div class="radio-group">
+          <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+          <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+          <label><input type="radio" name="genero" value="otro"> Otro</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="area_interes">Área de interés</label>
+        <select id="area_interes" name="area_interes">
+          <option value="">Selecciona una opción</option>
+          <option value="desarrollo_web">Desarrollo Web</option>
+          <option value="bases_datos">Bases de Datos</option>
+          <option value="redes">Redes</option>
+          <option value="ia">Inteligencia Artificial</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Preferencia de contacto</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="preferencia" value="email"> Email</label>
+          <label><input type="checkbox" name="preferencia" value="telefono"> Teléfono</label>
+          <label><input type="checkbox" name="preferencia" value="whatsapp"> WhatsApp</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="cv">Adjuntar archivo (CV)</label>
+        <input type="file" id="cv" name="cv">
+      </div>
+
+      <div class="form-group">
+        <label for="portafolio">URL personal o portafolio</label>
+        <input type="url" id="portafolio" name="portafolio" placeholder="https://miportafolio.com">
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu asunto o consulta..."></textarea>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="redes-sociales">
+    <h2>Redes sociales</h2>
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/mateo-saez-beleño-a842b03a2" target="_blank">LinkedIn</a>
+      <a href="https://github.com/mateo3268264832" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/mateossaezb/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/mateo.saez.843975/" target="_blank">Facebook</a>
+    </div>
+    <p class="copy">&copy; 2025 - Portafolio creado por Mateo Saez Beleño</p>
+  </footer>
+
+</body>
+</html>
